@@ -14,7 +14,7 @@
                 {{ .Site.Params.about.content | markdownify }}
 
                 {{ if .Site.Params.about.skills.enable }}
-                {{ .Site.Params.about.skills.title }}
+                <h5 class="text-center bg-transparent py-3">{{ .Site.Params.about.skills.title }}</h5>
                 <ul>
                     {{ range .Site.Params.about.skills.items }}
                     <li>{{ . | markdownify }}</li>
